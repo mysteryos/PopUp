@@ -11,17 +11,14 @@
   <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
   <link rel="stylesheet" href="/resources/demos/style.css">
 <script>
+        //Document ready function
 	$(function() {
 		$(".datepick2").datepicker({'dateFormat': 'd/m/y'});
+	        $('#popupForm').on('submit',function(e){
+	                var w = window.open('about:blank','Popup_Window','toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=400,height=300,left = 312,top = 234');
+	                this.target = 'Popup_Window';
+	        });
 	});
-</script>
-
-
- <script type="text/javascript">
-            $('#popupForm').on('submit',function(e){
-                var w = window.open('about:blank','Popup_Window','toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=400,height=300,left = 312,top = 234');
-                this.target = 'Popup_Window';
-    });
 </script>
 	
 </head>
